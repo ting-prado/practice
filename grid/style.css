@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  background: red;
+  height: 100vh;
+}

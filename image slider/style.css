@@ -1,0 +1,64 @@
+#cont {
+    border: 1px solid black;
+    width: 40em;
+    height: 22em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background: black;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1em;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#sliderCont {
+    width: auto;
+    height: 20em;
+    display: flex;
+    background: black;
+    transition: transform 500ms ease;
+}
+
+.imageCont {
+    width: 38em;
+    height: 20em;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.imageCont img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.arrow {
+    border: solid gray;
+    opacity: 0.5;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    height: 0.5em;
+    width: 0.5em;
+    padding: 3px;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+}
+
+.arrow:hover {
+    opacity: 0.8;
+}
+
+.left {
+    left: 1.5%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    right: 1.5%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}

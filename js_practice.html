@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Practice</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            /*function add7(n) { //Returns number added by 7
+                return n+7;
+            }
+
+            function multiply(a,b) { //Multiplies two numbers
+                return a*b;
+            }
+
+            function capitalize(sentence) { //Returns only first letter of the string in capital
+                let firstLetter = sentence[0].toUpperCase();
+                let restOfSentence = sentence.slice(1, sentence.length+1).toLowerCase();
+                return firstLetter + restOfSentence;
+            }
+
+            function lastLetter(sentence) { //Returns last letter of a string
+                return sentence[sentence.length-1];
+            }
+            console.log(add7(9));
+            console.log(multiply(5,6));
+            console.log(capitalize("i am great"));
+            console.log(lastLetter("hee haw"));*/
+
+            //Return 3rd largest number problem solution
+            const numbers = [5, 12, 23, 42, 67, 19, 7, 51, 33, 84];
+
+            function maxNum(){ //Return highest number overall
+                let max=0;
+                for( let i=0; i < arguments.length; i++ ){
+                    if(arguments[i]>max){
+                        max=arguments[i];
+                    }
+                }
+                return max;
+            }
+
+            function secondMaxNum(){//Return second highest number
+                let secondMax=0;
+                for( let i=0; i<arguments.length; i++){
+                    if(arguments[i]>secondMax && arguments[i] < max){ //Checks if current array value is greater than the variable but lesser than the highest value
+                        secondMax=arguments[i];
+                    }
+                }
+                return secondMax;
+            }
+
+            function thirdMaxNum(){ //Return third highest number
+                let thirdMax=0;
+                for( let i=0; i<arguments.length; i++){
+                    if(arguments[i]>thirdMax && arguments[i] < secondMax){ //Checks if current array value is greater than the variable but lesser than the second highest value
+                        thirdMax=arguments[i];
+                    }
+                }
+                return thirdMax;
+            }
+
+            let max = maxNum(...numbers);
+            //console.log(`The highest number is ${max}`);
+            let secondMax = secondMaxNum(...numbers);
+            //console.log(`The second highest number is ${secondMax}`);
+            let thirdMax = thirdMaxNum(...numbers);
+            console.log(`The third highest number is ${thirdMax}`);
+            </script>
+    </body>
+</html>

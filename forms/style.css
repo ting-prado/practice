@@ -1,0 +1,61 @@
+form {
+    width:  55%;
+    margin: 7% auto;
+}
+
+fieldset {
+    padding-top: 1em;
+}
+
+#inner {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.5em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+input {
+    margin-left: 0.2em;
+    width: 10em;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    position: relative;
+}
+
+#country {
+    margin-left: 0.2em;
+    font-size: 0.9em;
+}
+
+label[for='country'],
+label[for='zipCode'] {
+    margin-left: 3em;
+}
+
+input:focus:invalid {
+    background: rgb(250, 145, 145);
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.error {
+    display: block;
+    width: 11em;
+    text-align: center;
+    font-size: 0.8rem;
+    z-index: 1;
+    background: #900;
+    color: white;
+    position: absolute;
+    right: 0;
+}

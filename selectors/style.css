@@ -1,0 +1,49 @@
+main {
+  background: red;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+main > div {
+  background: yellow;
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+main > div > div {
+  background: green;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.group1 ~ div {
+  border: 20px double white;
+}
+
+.group1 + div {
+  background: blue;
+}
+
+.group1 + div + div {
+  background: orange;
+}
+
+.group1 + div > div {
+  background: cyan;
+}
+
+.group1 + div + div > div {
+  background: blueviolet;
+}
+
+.group1 > ul > li::marker {
+  color: yellow;
+}
+
+div:first-child {
+  box-shadow: 5px 5px gray;
+}
