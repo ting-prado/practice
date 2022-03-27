@@ -5,7 +5,7 @@ const searchBar = document.querySelector('input');
 const btn = document.querySelector('button');
 
 const loadNewImage = () => {
-  if(searchBar.input != '' || searchBar.input !== null){
+  if(searchBar.value != '' || searchBar.value !== null){
     fetch(`https://api.giphy.com/v1/gifs/translate?api_key=fMDEL3pkvdFXbLfoRJAo4I9fuVNXmH1T&s=${searchBar.value}`, {mode: 'cors'})
     .then(response => {
       return response.json();
