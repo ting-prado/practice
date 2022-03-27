@@ -1,5 +1,8 @@
+//Using then/catch code
+
 const img = document.querySelector('img');
 const searchBar = document.querySelector('input');
+const btn = document.querySelector('button');
 
 const loadNewImage = () => {
   if(searchBar.input != '' || searchBar.input !== null){
@@ -16,5 +19,4 @@ const loadNewImage = () => {
   }
 }
 
-const btn = document.querySelector('button');
 btn.addEventListener('click', loadNewImage);
