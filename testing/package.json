@@ -254,7 +254,12 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch-capitalize": "jest --watch ./capitalize.test.js",
+    "watch-calculator": "jest --watch ./calculator.test.js",
+    "watch-analyzeArray": "jest --watch ./analyzeArray.test.js",
+    "watch-reverseString": "jest --watch ./reverseString.test.js",
+    "watch-caesarCipher": "jest --watch ./caesarCipher.test.js"
   },
   "keywords": [],
   "author": "",
