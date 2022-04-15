@@ -1,5 +1,11 @@
 import caesarCipher from './caesarCipher';
 
+test('whole alphabet', () => {
+  expect(caesarCipher.encode('abcdefghijklmnopqrstuvwxyz')).toEqual(
+    'fghijklmnopqrstuvwxyzabcde'
+  );
+});
+
 test('one word string', () => {
   expect(caesarCipher.encode('Hello')).toEqual('mjqqt');
 });
